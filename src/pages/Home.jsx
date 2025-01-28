@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import image1 from '../assets/image1.jpg';
 import BestSellers from '../components/Bestsellers';
 import InnovationSection from '../components/InnovationSection';
@@ -17,9 +18,11 @@ const Home = ({ products }) => {
             blend <i>fashion</i><br />
             with <i>function</i>.
           </h1>
-          <button className="mt-6 px-6 py-3 bg-black text-white uppercase w-1/2 lg:w-1/3 text-xs mb-10">
-            Shop New Arrivals
-          </button>
+          <Link to="/catalog">
+            <button className="mt-6 px-6 py-3 bg-black text-white uppercase w-1/2 lg:w-1/3 text-xs mb-10">
+              Shop Now
+            </button>
+          </Link>
         </div>
 
         {/* Right - Image Section */}

@@ -15,7 +15,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li className="hover:underline cursor-pointer">
-          <Link to="/catalog">Catalogs</Link>
+          <Link to="/catalog">Catalog</Link>
         </li>
         <li className="hover:underline cursor-pointer">
           <Link to="/services">Our Services</Link> {/* New Nav Link */}

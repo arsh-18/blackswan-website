@@ -32,7 +32,7 @@ const CatalogPage = () => {
         </div>
       </div>
       <div className="bg-gray-200 mt-12 p-8 text-center mb-12">
-        <h2 className="text-2xl font-bold mb-4">Testimonials</h2>
+        <h2 className="text-2xl font-bold mb-4">Our Top Clients</h2>
         <div className="flex justify-center space-x-8">
           <img src="https://via.placeholder.com/100" alt="Company Logo" />
           <img src="https://via.placeholder.com/100" alt="Company Logo" />
