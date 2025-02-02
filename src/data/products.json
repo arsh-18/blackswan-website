@@ -1,0 +1,174 @@
+{
+    "products": [
+      {
+        "product_id": 1,
+        "product_name": "Round Neck T-shirt",
+        "material": "Cotton, Polyester",
+        "specifications": [
+          "Full zip closure",
+          "Soft fleece lining",
+          "Adjustable hood",
+          "Kangaroo pockets"
+        ],
+        "images": [
+            "pufferJacket.jpg", 
+            "pufferJacket.jpg"
+        ],
+        "description": "A stylish and comfortable zipper hoodie.",
+        "available_colors": ["#000000", "#808080", "#FF0000", "#0000FF"]
+      },
+      {
+        "product_id": 2,
+        "product_name": "Polo T-shirt",
+        "material": "Wool, Leather",
+        "specifications": [
+          "Button snap closure",
+          "Ribbed cuffs and hem",
+          "Contrasting sleeves",
+          "Two side pockets"
+        ],
+        "images": [
+            "pufferJacket.jpg", 
+            "pufferJacket.jpg"
+        ],
+        "description": "A classic varsity jacket with premium materials.",
+        "available_colors": ["#000000", "#FFFFFF", "#FF0000"]
+      },
+      {
+        "product_id": 3,
+        "product_name": "Oversized T-shirt",
+        "material": "Cotton",
+        "specifications": [
+          "Breathable fabric",
+          "Round neck",
+          "Short sleeves",
+          "Regular fit"
+        ],
+        "images": [
+            "pufferJacket.jpg", 
+            "pufferJacket.jpg"
+        ],
+        "description": "A comfortable and stylish t-shirt.",
+        "available_colors": ["#FFFFFF", "#000000", "#0000FF"]
+      },
+      {
+        "product_id": 4,
+        "product_name": "Hoodie",
+        "material": "Cotton",
+        "specifications": [
+          "Relaxed fit",
+          "Soft touch fabric",
+          "Crew neck",
+          "Drop shoulder design"
+        ],
+        "images": [
+            "pufferJacket.jpg", 
+            "pufferJacket.jpg"
+        ],
+        "description": "A trendy oversized t-shirt for a casual look.",
+        "available_colors": ["#808080", "#FFFFFF", "#FFAA00"]
+      },
+      {
+        "product_id": 5,
+        "product_name": "Zipper Hoodie",
+        "material": "Fleece, Cotton",
+        "specifications": [
+          "Pullover design",
+          "Soft fleece lining",
+          "Adjustable drawstring hood",
+          "Front pouch pocket"
+        ],
+        "images": [
+            "pufferJacket.jpg", 
+            "pufferJacket.jpg"
+        ],
+        "description": "A warm and stylish hoodie for all occasions.",
+        "available_colors": ["#000000", "#808080", "#00FF00"]
+      },
+      {
+        "product_id": 6,
+        "product_name": "Sweat Shirt",
+        "material": "Cotton, Spandex",
+        "specifications": [
+          "Slim fit",
+          "Short length",
+          "Stretchable fabric",
+          "Round neck"
+        ],
+        "images": [
+            "pufferJacket.jpg", 
+            "pufferJacket.jpg"
+        ],
+        "description": "A fashionable crop top for a bold look.",
+        "available_colors": ["#FF0000", "#FFFFFF", "#FFD700"]
+      },
+      {
+        "product_id": 7,
+        "product_name": "Varsity Jacket",
+        "material": "Polyester",
+        "specifications": [
+          "Breathable mesh fabric",
+          "Athletic fit",
+          "Quick-dry technology",
+          "V-neck collar"
+        ],
+        "images": [
+            "pufferJacket.jpg", 
+            "pufferJacket.jpg"
+        ],
+        "description": "A sporty jersey designed for performance.",
+        "available_colors": ["#0000FF", "#FFFFFF", "#FFAA00"]
+      },
+      {
+        "product_id": 8,
+        "product_name": "Jersey",
+        "material": "Denim Cotton",
+        "specifications": [
+          "Button-up front",
+          "Chest pockets",
+          "Classic collar",
+          "Regular fit"
+        ],
+        "images": [
+            "pufferJacket.jpg", 
+            "pufferJacket.jpg"
+        ],
+        "description": "A stylish denim jacket for any occasion.",
+        "available_colors": ["#000000", "#1E90FF", "#808080"]
+      },
+      {
+        "product_id": 9,
+        "product_name": "Crop top",
+        "material": "Cotton, Polyester",
+        "specifications": [
+          "Elastic waistband",
+          "Tapered leg",
+          "Soft fleece lining",
+          "Side pockets"
+        ],
+        "images": [
+            "pufferJacket.jpg", 
+            "pufferJacket.jpg"
+        ],
+        "description": "Comfortable and stylish sweatpants for everyday wear.",
+        "available_colors": ["#000000", "#808080", "#FFFFFF"]
+      },
+      {
+        "product_id": 10,
+        "product_name": "Bomber Jacket",
+        "material": "Nylon, Polyester",
+        "specifications": [
+          "Zipper front",
+          "Ribbed cuffs and hem",
+          "Water-resistant material",
+          "Slim fit"
+        ],
+        "images": [
+            "pufferJacket.jpg", 
+            "pufferJacket.jpg"
+        ],
+        "description": "A versatile bomber jacket with a modern touch.",
+        "available_colors": ["#000000", "#C0C0C0", "#FF0000"]
+      }
+    ]
+}
