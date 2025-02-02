@@ -56,14 +56,14 @@ const ProductInfo = () => {
 
         <div className="mt-6 flex flex-col gap-4">
           <a
-            href="/size-chart.pdf"
-            download
+            href="/size-chart-blackswan-stores.pdf"
+            download="size-chart-blackswan-stores.pdf"
             className="bg-black text-white text-center py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 w-[50%]"
           >
             Download Size Chart
           </a>
           <a
-            href="https://wa.me/yourwhatsapplink"
+            href="https://wa.me/9873835613"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-black text-white text-center py-2 px-4 rounded-lg shadow-md hover:bg-green-600 w-[50%]"

@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 import Home from './pages/Home';
 import Catalog from './pages/Catalog';
 import Contact from './pages/Contact';
 import ProductInfo from './pages/ProductInfo';
-import OurServices from './pages/OurServices'; // Import Our Services Page
+import OurServices from './pages/OurServices'; 
 import image1 from './assets/image1.jpg';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/catalog/:id" element={<ProductInfo />} />
           <Route path="/services" element={<OurServices />} /> 
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

@@ -50,12 +50,7 @@ const OurServices = () => {
       </div>
     ))}
   </div>
-  {/* Footer */}
- 
 </div>
-<div className="bg-black text-white text-center py-3 text-sm">
-        <p>&copy; Blackswan All Rights Reserved</p>
-      </div>
 </>
   );
 };

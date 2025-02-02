@@ -1,11 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import productsData from "../data/products.json"; 
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
+    phone: "",
     email: "",
+    product: "",
     message: "",
   });
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    if (productsData && Array.isArray(productsData.products)) {
+      setProducts(productsData.products);
+    } else {
+      console.error("productsData is not an array:", productsData);
+    }
+  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -13,8 +26,11 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Message Sent! Name: ${formData.name}, Email: ${formData.email}`);
-    setFormData({ name: "", email: "", message: "" });
+    const { name, phone, email, product, message } = formData;
+    const whatsappUrl = `https://wa.me/9873835613?text=${encodeURIComponent(
+      `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nProduct: ${product}\nMessage: ${message}`
+    )}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
@@ -30,68 +46,106 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="bg-white shadow-lg rounded-lg px-6 py-6 w-full border-2 border-black"
           >
-            {/* Name Input */}
             <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
-                Full Name
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="name"
+              >
+                Name
               </label>
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="name"
                 required
-                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-black text-sm"
-                placeholder="Enter your name"
               />
             </div>
-
-            {/* Email Input */}
             <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
-                Email Address
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="phone"
+              >
+                Phone
+              </label>
+              <input
+                type="text"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="phone"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="email"
+              >
+                Email
               </label>
               <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
                 required
-                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-black text-sm"
-                placeholder="Enter your email"
               />
             </div>
-
-            {/* Message Input */}
             <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="product"
+              >
+                Product you want to enquire about
+              </label>
+              <select
+                name="product"
+                value={formData.product}
+                onChange={handleChange}
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="product"
+                required
+              >
+                <option value="">Select a product</option>
+                {products.map((product) => (
+                  <option key={product.product_id} value={product.product_name}>
+                    {product.product_name}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="message"
+              >
                 Message
               </label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="message"
                 required
-                rows="4"
-                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-black text-sm"
-                placeholder="Write your message here..."
-              ></textarea>
+              />
             </div>
-
-            {/* Submit Button */}
-            <button
-              type="submit"
-              className="w-full bg-black text-white py-3 rounded-md text-base font-semibold hover:bg-gray-800 transition-all"
-            >
-              Send Message
-            </button>
+            <div className="flex items-center justify-between">
+              <button
+                type="submit"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              >
+                Send Message
+              </button>
+            </div>
           </form>
         </div>
-      </div>
-
-      {/* Footer */}
-      <div className="bg-black text-white text-center py-3 text-sm">
-        <p>&copy; Blackswan All Rights Reserved</p>
       </div>
     </>
   );

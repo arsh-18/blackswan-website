@@ -8,7 +8,6 @@ import SmallProductCard from '../components/SmallProductCard';
 const Home = ({ products }) => {
   return (
     <>
-      {/* Hero Section */}
       <div className="flex flex-col lg:flex-row h-screen w-full">
         {/* Left - Text Section */}
         <div className="lg:w-1/2 w-full flex flex-col justify-center px-10 lg:px-20 mt-10">
@@ -67,11 +66,6 @@ const Home = ({ products }) => {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="bg-black text-white text-center py-4 mt-10">
-        <p>&copy; Blackswan All Rights Reserved</p>
-      </footer>
     </>
   );
 };
